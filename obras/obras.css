@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Cabecera*/
+header{
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: -webkit-linear-gradient(left, rgba(52, 105, 165, 0.6), rgba(91, 117, 123, 0.6), rgba(54, 125, 113, 0.6)), url(../imagenes/fondoheader.jpeg);
+    background-image: -moz-linear-gradient(left, rgba(52, 105, 165, 0.6), rgba(91, 117, 123, 0.6), rgba(54, 125, 113, 0.6)), url(../imagenes/fondoheader.jpeg);
+    background-image: -o-linear-gradient(left, rgba(52, 105, 165, 0.6), rgba(91, 117, 123, 0.6), rgba(54, 125, 113, 0.6)), url(../imagenes/fondoheader.jpeg);
+}
+h1{
+    font-family: 'Secular One', sans-serif;
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(28, 219, 203);
+}
+
+/*Fin Cabecera*/
+/*nav*/
+nav{
+    width: 100%;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: rgba(129, 245, 216, 0.685);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 15px;
+}
+nav a:hover{
+    color: rgb(187, 226, 223);
+    font-weight: bolder;
+}
+/*Fin nav*/
+/*Button*/
+button{
+    position: fixed;
+    border: none;
+    padding: 7px;
+    right:10px;
+    top: 90%;
+    background-color: rgb(120, 148, 209);
+    border-radius: 50%;
+}
+button a{
+    text-decoration: none;
+}
+button a img{
+    width: 20px;
+    height: 20px;
+}
+/*Button Fin*/
+/*section*/
+#centro{
+    padding-bottom: 2.5%;
+}
+#titulo1{
+    color: rgb(117, 117, 117);
+}
+h2{
+    margin-top: 30px;
+    font-family: 'Secular One', sans-serif;
+}
+.textogrande{
+    font-family: 'Secular One', sans-serif;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+/*Finsection*/
+/*sectionImagen*/
+#card-gallery {
+    display: flex;
+    justify-content: space-around;
+    background-color: #b1aeae;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.card {
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: #f0efed;
+    
+}
+.card-text{
+    text-align: justify;
+    font-family: 'Secular One', sans-serif;
+    font-size: 10px;
+}
+.card-header{
+    font-family: 'Secular One', sans-serif;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.card > .card-image {
+    width: 100%;
+    height: 45%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/*sectionFin*/
+/*footer*/
+footer{
+    background-color:rgb(77, 77, 77);
+    padding: 40px 20px;
+    color: white;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+footer div ul{
+    text-align: center;
+    list-style-type: none;
+}
+footer div li:hover{
+    color: rgb(73, 73, 73);
+}
+.capafooter1,.capafooter2{
+    width: 100%;
+    height: 65px;
+}
+.capafooter1{
+    border-right: 1px solid rgb(255, 254, 254);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+/*Fin footer*/
+/*media*/
+@media screen and (max-width:600px){
+    body > #card-gallery{
+        grid-template-columns: auto;
+        display: grid;
+    }
+    .card{
+        width: 90%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+    }
+    .card > .card-image {
+        width: 100%;
+        height: 40%;
+    }
+    footer{
+        font-size: 10px;
+    }
+    .textogrande{
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width:950px){
+    #card-gallery  {
+        grid-template-columns:auto auto;
+        display: grid;
+    }
+    .card{
+        width: 90%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
